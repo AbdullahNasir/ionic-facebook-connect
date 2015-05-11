@@ -1,0 +1,55 @@
+<ion-view view-title="Profile">
+  <ion-content class="padding">
+      <div class="list card" ng-show="user">
+          <div class="item">
+              <div class="row">
+                  <div class="col-5">
+                      <img src="http://graph.facebook.com/{{user.id}}/picture?width=56&height=56"/>
+                  </div>
+                  <div class="col-70">
+                    <div class="row">
+                        <div class="col">
+                            <h2>{{user.name}}</h2>
+                            <a href="{{user.link}}" target="_blank">View Profile</a>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="item item-body">
+              <div class="row">
+                  <div class="col">
+                      First Name
+                  </div>
+                  <div class="col">
+                      {{user.first_name}}
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                    Last Name
+                  </div>
+                  <div class="col">
+                      {{user.last_name}}
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                      Gender
+                  </div>
+                  <div class="col">
+                      {{user.gender}}
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                      Email
+                  </div>
+                  <div class="col">
+                      {{user.email}}
+                  </div>
+              </div>
+          </div>
+      </div>
+  </ion-content>
+</ion-view>
