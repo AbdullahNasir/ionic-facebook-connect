@@ -1,6 +1,8 @@
 angular.module('starter.controllers', [])
 
-.controller('ProfileCtrl', function($scope,$ionicLoading) {
+.controller('ProfileCtrl', function($scope,$ionicLoading,$ionicViewService) {
+        //removing login screen from navigation history.
+        $ionicViewService.clearHistory();
         $ionicLoading.show({template:"Retrieving Profile"});
         openFB.api({
             path: '/me',
@@ -33,16 +35,6 @@ angular.module('starter.controllers', [])
                 alert('Facebook error: ' + error.error_description);
             }
         });
-})
-
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
-})
-
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
 })
 
 .controller('LoginController',function($scope,$state,$ionicLoading){

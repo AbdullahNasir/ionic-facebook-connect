@@ -55,6 +55,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','n
           url:'/login',
           templateUrl:"templates/login.html",
           controller:"LoginController"
+
       })
 
   // setup an abstract state for the tabs directive
