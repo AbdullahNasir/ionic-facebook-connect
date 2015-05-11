@@ -1,5 +1,7 @@
 # Install Process
->Process for installing the app
+
+> Process for installing the app
+
 1. [`Clone the Repository`](https://github.com/AbdullahNasir/ionic-facebook-connect.git).
 2. Open the folder in command line
 3. `cd` to the `fb-connect` folder.
@@ -12,4 +14,4 @@
 10. For *Android* run `grunt run:android`
 11. For IOS run `grunt run:ios`
 
->The project structure is cloned from [Generator-Ionic](https://github.com/diegonetto/generator-ionic).
+> The project structure is cloned from [Generator-Ionic](https://github.com/diegonetto/generator-ionic).
